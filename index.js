@@ -46,6 +46,7 @@ function assignClasses () {
 // Reset the Grid
 resetButton.addEventListener('click', () => {
     userGridNumber = parseInt(prompt('Please enter a new Grid Size'));
+    (userGridNumber > 100) ? alert('100 is the max size!') :
     createGrid(userGridNumber);
 });
 
