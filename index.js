@@ -36,7 +36,7 @@ function assignClasses () {
 };
 
 // Delete the Grid
-    resetButton.addEventListener('click', () => {
+resetButton.addEventListener('click', () => {
     let children = gridContainer.childNodes;
     for (i = children.length; i > 0; i--) {
         gridContainer.removeChild(gridContainer.firstChild);
@@ -51,6 +51,3 @@ resetButton.addEventListener('click', () => {
 });
 
 createGrid(userGridNumber);
-
-
-
